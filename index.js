@@ -10,11 +10,13 @@ app.get('/', (req, res) => {
     res.send("Hello to my API");
 })
 
-setTimeout(async () => {
-   await sendWhatsAppMessage(6291752626, "Esse teste funcionou") 
-}, 1000 * 60);
+// const number = "Here is a phone number"
+
+// setTimeout(async () => {
+//    await sendWhatsAppMessage(number, "Esse teste funcionou") 
+// }, 1000 * 60 * 5);
 
 app.listen(3001, () => {
-    console.log('Servidor Rodando PORTA: ', 3001);
+    console.log('Server is Running PORT: ', 3001);
     connectToWhatsApp();
 })

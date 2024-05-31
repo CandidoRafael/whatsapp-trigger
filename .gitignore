@@ -27,10 +27,12 @@ log.txt
 .cache/
 .tmp/
 
+
 # Dependências e módulos
 node_modules/
 .wwebjs_auth/
 .wwebjs_cache/
+auth_info_baileys/
 __pycache__/
 *.pyc
 *.pyo
