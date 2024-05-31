@@ -1,5 +1,5 @@
 const { Boom } = require("@hapi/boom");
-const { default: makeWASocket, useMultiFileAuthState, Browsers } = require("@whiskeysockets/baileys");
+const { default: makeWASocket, useMultiFileAuthState, Browsers, DisconnectReason } = require("@whiskeysockets/baileys");
 const { default: pino } = require("pino");
 
 let sock;
