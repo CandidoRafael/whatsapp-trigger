@@ -1,8 +1,9 @@
 const express = require('express');
 const { sendWhatsAppMessage, connectToWhatsApp } = require('./config/WhatsAppClient');
-
+const cors = require('cors');
 
 const app = express();
+app.use(cors());
 app.use(express.json())
 
 app.get('/', (req, res) => {
